@@ -7,11 +7,11 @@ import React, {
 } from 'react-native'
 
 import { bindActionCreators } from 'redux'
-import AddTodo from '../components/addTodo'
+import TodoApp from '../components/todoApp'
 import * as todoActions from '../actions/todoActions'
 import { connect } from 'react-redux'
 
-class TodoApp extends Component {
+class TodoAppContainer extends Component {
 
 	constructor(props) {
 		super(props)
@@ -19,7 +19,7 @@ class TodoApp extends Component {
 
 	render() {
 		const { state, dispatch } = this.props
-		return <AddTodo
+		return <TodoApp
 						names={state.names}
 						{...bindActionCreators(todoActions, dispatch)} />
 	}
@@ -30,4 +30,4 @@ function mapStateToProps(state) {
 	return { state: state.addTodoReducer }
 }
 
-export default connect(mapStateToProps)(TodoApp)
+export default connect(mapStateToProps)(TodoAppContainer)
