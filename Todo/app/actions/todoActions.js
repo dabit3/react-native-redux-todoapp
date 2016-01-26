@@ -13,3 +13,17 @@ export function deleteTodo(id) {
 		id: id
 	}
 }
+
+export function todoDone(id) {
+	return {
+		type: types.TODODONE,
+		id: id
+	}
+}
+
+export function setFilter(filter) {
+	return {
+		type: types.SETFILTER,
+		filter: filter
+	}
+}
