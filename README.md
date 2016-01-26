@@ -4,7 +4,7 @@
 
 This is a basic Todo app built using React Native and Redux
 
-![Final app](http://i.imgur.com/Y9fhK8z.png "Final App")
+![Final app](http://i.imgur.com/Y9fhK8z.png =200x)
 
 ### Usage
 
