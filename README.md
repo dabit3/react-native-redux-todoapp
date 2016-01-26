@@ -4,6 +4,8 @@
 
 This is a basic Todo app built using React Native and Redux
 
+!(http://i.imgur.com/Y9fhK8z.png)
+
 ### Usage
 
 - git clone the project
