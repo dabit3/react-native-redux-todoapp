@@ -18,9 +18,9 @@ class TodoAppContainer extends Component {
 	}
 
 	render() {
-		const { state, filter, dispatch } = this.props
+		const { names, filter, dispatch } = this.props
 		return <TodoApp
-						names={state.names}
+						names={names.names}
 						filter={filter.filter}
 						{...bindActionCreators(todoActions, dispatch)} />
 	}
@@ -28,7 +28,7 @@ class TodoAppContainer extends Component {
 }
 
 function mapStateToProps(state) {
-	return { state: state.addTodoReducer, filter: state.filterTodoReducer }
+	return { names: state.addTodoReducer, filter: state.filterTodoReducer }
 }
 
 export default connect(mapStateToProps)(TodoAppContainer)
